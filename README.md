@@ -1,5 +1,5 @@
 ## Descripción
-Desarrollo de una aplicación de pruebas para reconocimiento de usuarios mediante el uso de la cámara Intel RealSense Depth Camera D435I.
+Desarrollo de una aplicación de pruebas para reconocimiento de usuarios mediante el uso de la cámara Intel RealSense Depth Camera D435I. Proyecto utilizado como base: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib/face.
 ## Pasos a seguir
 ### Instalación de componentes necesarios para el funcionamiento del dispositivo
 El proyecto hace uso de la librería dlib, para instalarla correctamente hay que seguir los pasos indicados en el siguiente enlace: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib
@@ -10,7 +10,7 @@ Ya que para este proyecto se ha utilizado como base algunos códigos de Intel, e
 **Atención:** para que todo funcione correctamente, cuando se ha creado la carpeta build y se procede a ejecutar el programa cmak, hay que acordarse de ejecutar el programa con las referencias a la librería dlib instalada anteriormente. Utilizar el siguiente comando dentro de la carpeta build: **cmake ../ -DBUILD_EXAMPLES=false -DBUILD_GRAPHICAL_EXAMPLES=false -DBUILD_DLIB_EXAMPLES=true -DDLIB_DIR=~/work/dlib-19.22** 
 
 ### Preparación
-Descagamos el archivo con los pesos de la red neuronal en el siguiente enlace: dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2. Una vez descargado, descomprimimos el archivo dentro de la carpeta **build/wrappers/dlib/face/**.
+Descagamos el archivo con los pesos de la red neuronal en el siguiente enlace: http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2. Una vez descargado, descomprimimos el archivo dentro de la carpeta **build/wrappers/dlib/face/**.
 
 Una vez instalado todo correctamente, copiamos los archivos de este repositorio a la siguiente dirección: **Facedetection/wrappers/dlib/face** y sustituimos los dos archivos que ya hay con el mismo nombre. Después de esto, en el directorio **/Facedetection/build/wrappers/dlib/face/**, ejecutamos el comando **sudo make install** y con esto estaremos compilando el código de la aplicación.
 

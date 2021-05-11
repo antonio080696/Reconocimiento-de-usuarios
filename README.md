@@ -1,5 +1,5 @@
 ## Descripción
-Desarrollo de una aplicación de pruebas para reconocimiento de usuarios mediante el uso de la cámara Intel RealSense Depth Camera D435I. Proyecto utilizado como base: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib/face.
+Desarrollo de una aplicación de prueba para reconocimiento de usuarios mediante el uso de la cámara Intel RealSense Depth Camera D435I. Proyecto utilizado como base: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib/face.
 ## Pasos a seguir
 ### Instalación de componentes necesarios para el funcionamiento del dispositivo
 El proyecto hace uso de la librería dlib, para instalarla correctamente hay que seguir los pasos indicados en el siguiente enlace: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib

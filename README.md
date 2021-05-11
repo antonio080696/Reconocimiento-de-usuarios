@@ -2,12 +2,12 @@
 Desarrollo de una aplicación de prueba para reconocimiento de usuarios mediante el uso de la cámara Intel RealSense Depth Camera D435I. Proyecto utilizado como base: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib/face.
 ## Pasos a seguir
 ### Instalación de componentes necesarios para el funcionamiento del dispositivo
-El proyecto hace uso de la librería dlib, para instalarla correctamente hay que seguir los pasos indicados en el siguiente enlace: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib
+El proyecto hace uso de la librería dlib, para instalarla correctamente hay que seguir los pasos indicados en el siguiente enlace: https://github.com/IntelRealSense/librealsense/tree/master/wrappers/dlib.
 
-Ya que para este proyecto se ha utilizado como base algunos códigos de Intel, es necesario seguir los pasos indicados en el siguiente link (se recomienda eliminar la capeta "examples" y dentro de la carpeta "wrappers", eliminar todas las carpetas menos "dlib"): https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md
+Ya que para este proyecto se ha utilizado como base algunos códigos de Intel, es necesario seguir los pasos indicados en el siguiente link (se recomienda eliminar la capeta "examples" y dentro de la carpeta "wrappers", eliminar todas las carpetas menos "dlib"): https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md.
 
 
-**Atención:** para que todo funcione correctamente, cuando se ha creado la carpeta build y se procede a ejecutar el programa cmak, hay que acordarse de ejecutar el programa con las referencias a la librería dlib instalada anteriormente. Utilizar el siguiente comando dentro de la carpeta build: **cmake ../ -DBUILD_EXAMPLES=false -DBUILD_GRAPHICAL_EXAMPLES=false -DBUILD_DLIB_EXAMPLES=true -DDLIB_DIR=~/work/dlib-19.22** 
+**Atención:** para que todo funcione correctamente, cuando se ha creado la carpeta build y se procede a ejecutar el programa cmak, hay que acordarse de ejecutar el programa con las referencias a la librería dlib instalada anteriormente. Utilizar el siguiente comando dentro de la carpeta build: **cmake ../ -DBUILD_EXAMPLES=false -DBUILD_GRAPHICAL_EXAMPLES=false -DBUILD_DLIB_EXAMPLES=true -DDLIB_DIR=~/work/dlib-19.22**.
 
 ### Preparación
 Descagamos el archivo con los pesos de la red neuronal en el siguiente enlace: http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2. Una vez descargado, descomprimimos el archivo dentro de la carpeta **build/wrappers/dlib/face/**.
